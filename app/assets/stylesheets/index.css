@@ -298,9 +298,32 @@ body {
 
 #newsletter {
   margin-top: 5%;
-  width: 70%;
-  margin-left: 15%;
+  height: 35px;
+  width: 60%;
+  margin-left: 20%;
   padding-bottom: 7.5%;
+  font-size: 20px;
+}
+
+input[type="text"] {
+  margin-left: 1em;
+  height: 35px;
+  text-align: center;
+  background-color: white;
+  color: rgb(19, 201, 191);
+  font-size: 18px;
+  width: 55%;
+  border: none;
+}
+
+input[type="submit"] {
+  height: 35px;
+  float: right;
+  text-align: center;
+  border: 1px solid white;
+  width: 25%;
+  border-radius: 20px;
+  background-color: transparent;
 }
 
 .credits {
@@ -308,11 +331,21 @@ body {
   padding-right: 10%;
 }
 
+.creds {
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 100;
+  margin-left: 10px !important;
+  float: left;
+  padding-left: 0px !important;
+}
+
 .social-icons {
   float: right;
   height: 55px;
   width: 55px;
   padding-left: 20px;
+  padding-bottom: 15px;
 }
 
 
