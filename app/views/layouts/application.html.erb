@@ -5,20 +5,24 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
-<body>
-
-  <a href="/">Home</a> |
+<header>
 
   <% if current_user %>
-    Signed in as <%= current_user.first_name %> | <%= link_to "Logout", '/logout' %>
-      <%= current_user.id %>
-  <a href="/dashboard">Dashboard</a> |
-
+    <a href="/logout"><button class="action-bar-item">登出</button></a>
+    <a href="/dashboard"><button class="action-bar-item">個人頁面</button></a>
+    <a href="/browse"><button class="action-bar-item">瀏覽經驗</button></a>
+    <a href="/"><button class="action-bar-item">成為專家</button></a>
   <% else %>
-    <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+    <a href="/login"><button class="action-bar-item">登入</button></a>
+    <a href="/signup"><button class="action-bar-item">註冊</button></a>
+    <a href="/browse"><button class="action-bar-item">瀏覽經驗</button></a>
+    <a href="/"><button class="action-bar-item">成為專家</button></a>
   <% end %>
 
+</header>
+<body>
 
   <%= yield %>
 
