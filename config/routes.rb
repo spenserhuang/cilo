@@ -16,6 +16,8 @@ Rails.application.routes.draw do
 
   get  'users/:id' => 'users#show'
 
+  get  '/sharings/:id/reservation' => 'sharings#reservation'
+
   root 'index#home'
 
 end

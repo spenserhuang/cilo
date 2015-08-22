@@ -3,6 +3,6 @@ class IndexController < ApplicationController
   end
 
   def browse
-    @
+    @sharings = Sharing.all
   end
 end

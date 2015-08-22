@@ -8,3 +8,11 @@ First Name: <%= @desired_user.first_name %>
 Email: <%= @desired_user.email %>
 <br>
 Phone Number: <%= @desired_user.phone_number %>
+<br>
+<br>
+<% @desired_user.sharings.each do |sharing| %>
+  <li><%= sharing.title %></li>
+  <a href="/sharings/<%= sharing.id %>/reservation"><button>Reserve</button></a>
+  <br>
+  <br>
+<% end %>
