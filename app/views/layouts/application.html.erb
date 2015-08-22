@@ -12,6 +12,9 @@
 
   <% if current_user %>
     Signed in as <%= current_user.first_name %> | <%= link_to "Logout", '/logout' %>
+      <%= current_user.id %>
+  <a href="/users/">Dashboard</a> |
+
   <% else %>
     <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
   <% end %>

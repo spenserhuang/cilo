@@ -13,6 +13,13 @@ class UsersController < ApplicationController
     end
   end
 
+  def dashboard
+  end
+
+  def show
+    @desired_user = User.find(params[:id])
+  end
+
 private
 
   def user_params
