@@ -29,11 +29,6 @@ button:focus {
   outline:0;
 }
 
-.action-bar-item:hover {
-  padding-bottom: 0px;
-  border-bottom: 1px solid #000;
-}
-
 .action-bar-item {
   float: right;
   background: none;
