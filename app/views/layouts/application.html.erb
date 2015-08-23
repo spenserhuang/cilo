@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <header>
-  <a href="/"><%= image_path("logo_white.svg") %></a>
+  <a href="/"><img src= id="nav-logo"></a>
+  <a href="/"><img src="<%=image_path('logo_white.svg')%>" id="nav-logo"></a>
 
   <% if current_user %>
     <a href="/logout"><button class="action-bar-item">登出</button></a>
