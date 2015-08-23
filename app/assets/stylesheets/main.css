@@ -90,6 +90,15 @@ ul, ol {
 .full-window-width { width: 100%; }
 .full-window-height { height: 100%; }
 
+@font-face {
+    font-family: 'STHeiti';
+    src: url('images/STHeiti Medium.ttc');
+}
+
+body {
+    font-family: 'STHeiti';
+}
+
 
 /* ==========================================================================
    Media Queries
