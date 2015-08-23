@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get  '/signup' => 'users#new'
   post '/users'  => 'users#create'
 
+  post '/follow' => 'index#follow'
 
   get  '/home'   => 'index#home'
   get  '/browse' => 'index#browse'
